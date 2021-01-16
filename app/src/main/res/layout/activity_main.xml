@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+        <androidx.appcompat.widget.SearchView
+            app:queryHint="@string/hint_search"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/btn_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        </androidx.appcompat.widget.SearchView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginEnd="4dp"
+            android:layout_toStartOf="@id/btn_settings"
+            android:id="@+id/btn_filter"
+            android:src="@drawable/icon_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginEnd="6dp"
+            android:id="@+id/btn_settings"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/icon_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        </androidx.appcompat.widget.AppCompatImageView>
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        app:tabTextAppearance="@style/CustomTabTextAppereance"
+        android:id="@+id/tab_layout"
+        android:layout_marginTop="42dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignTop="@id/toolbar">
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_marginTop="84dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.viewpager2.widget.ViewPager2>
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TourObserver" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorAccent">#002202</item>
+        <item name="colorPrimary">@color/main_blue</item>
+    </style>
+</resources>
