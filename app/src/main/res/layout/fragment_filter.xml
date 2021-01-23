@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:background="@color/main_blue_dark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation_layer.activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height">
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_back"
+            android:paddingHorizontal="@dimen/margin_12"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/icon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        </androidx.appcompat.widget.AppCompatImageButton>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="@dimen/header_text_size"
+            android:textColor="@color/main_blue"
+            android:gravity="start|center"
+            android:text="@string/header_filter"
+            android:layout_marginStart="@dimen/margin_12"
+            android:layout_toEndOf="@id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        </androidx.appcompat.widget.AppCompatTextView>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_type"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

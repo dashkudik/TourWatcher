@@ -1,4 +1,11 @@
 <resources>
-    <string name="app_name">TourObserver</string>
+    <string name="app_name">TourWatcher</string>
     <string name="hint_search">Поиск</string>
+    <string name="header_filter">Фильтр</string>
+    <string name="type_pyramid">Пирамида</string>
+    <string name="type_snooker">Снукир</string>
+    <string name="type_pool">Пул</string>
+    <string name="type_carom">Карамболь</string>
+
+    <string name="unknown_error_message">Неизвестная ошибка</string>
 </resources>

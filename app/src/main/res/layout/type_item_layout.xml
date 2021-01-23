@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/type_item_back"
+    android:layout_width="@dimen/item_type_width"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_type"
+            android:paddingTop="@dimen/big_padding_12"
+            android:autoSizeTextType="none"
+            android:autoSizeMinTextSize="@dimen/small_text_size"
+            android:autoSizeMaxTextSize="@dimen/big_text_size_16"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </androidx.appcompat.widget.AppCompatTextView>
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkbox_type"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </androidx.appcompat.widget.AppCompatCheckBox>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

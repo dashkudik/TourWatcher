@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="header_text_size">22sp</dimen>
+    <dimen name="big_padding_12">12dp</dimen>
+    <dimen name="small_text_size">9sp</dimen>
+    <dimen name="big_text_size_16">16sp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="item_type_width">125dp</dimen>
+    <dimen name="toolbar_height">46dp</dimen>
+    <dimen name="img_padding">4dp</dimen>
+    <dimen name="img_padding">4dp</dimen>
+    <dimen name="tabs_height">42dp</dimen>
+</resources>

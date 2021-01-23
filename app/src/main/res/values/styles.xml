@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="CustomTabTextAppereance" parent="TextAppearance.Design.Tab">
+    <style name="CustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
         <item name="android:textSize">13sp</item>
         <item name="android:lines">1</item>
     </style>
